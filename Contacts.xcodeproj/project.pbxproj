@@ -13,6 +13,10 @@
 		491DE55A1F295D94005A92E3 /* Contacts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 491DE5581F295D94005A92E3 /* Contacts.xcdatamodeld */; };
 		491DE55C1F295D94005A92E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 491DE55B1F295D94005A92E3 /* Assets.xcassets */; };
 		491DE55F1F295D94005A92E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491DE55D1F295D94005A92E3 /* LaunchScreen.storyboard */; };
+		491DE5711F29690B005A92E3 /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491DE5701F29690B005A92E3 /* ContactsViewModel.swift */; };
+		491DE5731F296956005A92E3 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491DE5721F296956005A92E3 /* Contact.swift */; };
+		491DE5751F296F21005A92E3 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491DE5741F296F21005A92E3 /* AddContactViewController.swift */; };
+		491DE5771F2976A4005A92E3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491DE5761F2976A4005A92E3 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		491DE55B1F295D94005A92E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		491DE55E1F295D94005A92E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		491DE5601F295D94005A92E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		491DE5701F29690B005A92E3 /* ContactsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
+		491DE5721F296956005A92E3 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		491DE5741F296F21005A92E3 /* AddContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
+		491DE5761F2976A4005A92E3 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 				491DE55D1F295D94005A92E3 /* LaunchScreen.storyboard */,
 				491DE5601F295D94005A92E3 /* Info.plist */,
 				491DE5581F295D94005A92E3 /* Contacts.xcdatamodeld */,
+				491DE5701F29690B005A92E3 /* ContactsViewModel.swift */,
+				491DE5721F296956005A92E3 /* Contact.swift */,
+				491DE5741F296F21005A92E3 /* AddContactViewController.swift */,
+				491DE5761F2976A4005A92E3 /* DetailViewController.swift */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -99,6 +111,7 @@
 				TargetAttributes = {
 					491DE54D1F295D94005A92E3 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = E526RZQ4DF;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -140,8 +153,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				491DE5541F295D94005A92E3 /* ViewController.swift in Sources */,
+				491DE5711F29690B005A92E3 /* ContactsViewModel.swift in Sources */,
+				491DE5731F296956005A92E3 /* Contact.swift in Sources */,
+				491DE5751F296F21005A92E3 /* AddContactViewController.swift in Sources */,
 				491DE5521F295D94005A92E3 /* AppDelegate.swift in Sources */,
 				491DE55A1F295D94005A92E3 /* Contacts.xcdatamodeld in Sources */,
+				491DE5771F2976A4005A92E3 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,10 +283,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: miguelef91@gmail.com (7DQLKP43X6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = E526RZQ4DF;
 				INFOPLIST_FILE = Contacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Miguel.Contacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -278,10 +299,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: miguelef91@gmail.com (7DQLKP43X6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = E526RZQ4DF;
 				INFOPLIST_FILE = Contacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Miguel.Contacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -305,6 +330,7 @@
 				491DE5651F295D94005A92E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
